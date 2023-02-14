@@ -1,0 +1,19 @@
+<table class="show-table">
+  <tr>
+    <td><b>Title:</b></td>
+    <td><%= @book.title %></td>
+  </tr>
+  <tr>
+  	<td><b>Body:</b></td>
+  　<td><%= @book.body %></td>
+  </tr>
+</table>
+　<div class="menu">
+
+  <div class="menu">
+    <%= link_to "Edit", edit_book_path(@book) %>
+  </div>
+    |
+  <div class="menu">
+    <%= link_to "Back", books_path %>
+  </div>
